@@ -5,7 +5,7 @@ from tabulate import tabulate
 client = psycopg2.connect(
     dbname = "Stock",
     user = "postgres",
-    password = "inara1203",
+    password = "password",
     host = "::1",
     port = "5432"
 )
