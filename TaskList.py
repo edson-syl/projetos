@@ -5,7 +5,7 @@ import datetime
 client = psycopg2.connect(
     dbname="TaskList",
     user="postgres",
-    password="inara1203",
+    password="password",
     host="::1",
     port="5432"
 )
