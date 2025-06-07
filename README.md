@@ -1,4 +1,4 @@
-# 👋 Olá, eu sou o Edson Silva Batista
+# 👋 Olá, eu sou Edson
 
 🎯 Desenvolvedor Full-Stack Júnior  
 📍 Pernambuco | Disponível para trabalho remoto e híbrido  
