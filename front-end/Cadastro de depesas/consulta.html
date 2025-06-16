@@ -68,6 +68,7 @@
         <th>Tipo</th>
         <th>Descrição</th>
         <th>Valor (R$)</th>
+        <th>Ação</th>
       </tr>
     </thead>
     <tbody id="resultadoTabela"></tbody>
@@ -79,34 +80,50 @@
   const filtroForm = document.getElementById('filtroForm');
   const resultadoTabela = document.getElementById('resultadoTabela');
   let despesas_list = JSON.parse(localStorage.getItem('despesas')) || [];
+
   const meses = {
     janeiro: 0, fevereiro: 1, marco: 2, abril: 3, maio: 4, junho: 5,
     julho: 6, agosto: 7, setembro: 8, outubro: 9, novembro: 10, dezembro: 11
   };
+
   function formatDate(isoStr) {
     const d = new Date(isoStr);
     return d.toLocaleDateString('pt-BR');
   }
+
+  function removerDespesa(index) {
+    despesas_list.splice(index, 1);
+    localStorage.setItem('despesas', JSON.stringify(despesas_list));
+    filtroForm.dispatchEvent(new Event('submit'));
+  }
+
   filtroForm.addEventListener('submit', e => {
     e.preventDefault();
     const ano = document.getElementById('ano').value;
     const mes = document.getElementById('mes').value;
     const dia = document.getElementById('dia').value;
     const tipo = document.getElementById('tipo').value;
-    let filtro = despesas_list;
+
+    let filtro = despesas_list.map((d, i) => ({ ...d, index: i }));
+
     if (ano) filtro = filtro.filter(d => new Date(d.data).getFullYear() == ano);
     if (mes) filtro = filtro.filter(d => new Date(d.data).getMonth() == meses[mes.toLowerCase()]);
     if (dia) filtro = filtro.filter(d => new Date(d.data).getDate() == parseInt(dia));
     if (tipo) filtro = filtro.filter(d => d.tipo === tipo);
+
     resultadoTabela.innerHTML = filtro.length ? filtro.map(d => `
       <tr>
         <td>${formatDate(d.data)}</td>
         <td>${d.tipo.charAt(0).toUpperCase() + d.tipo.slice(1)}</td>
         <td>${d.desc}</td>
         <td>${d.valor.toFixed(2)}</td>
+        <td>
+          <button class="btn btn-danger btn-sm text-white" onclick="removerDespesa(${d.index})">❌</button>
+        </td>
       </tr>
-    `).join('') : '<tr><td colspan="4" class="text-center">Nenhuma despesa encontrada</td></tr>';
+    `).join('') : '<tr><td colspan="5" class="text-center">Nenhuma despesa encontrada</td></tr>';
   });
+
   filtroForm.dispatchEvent(new Event('submit'));
 </script>
 
