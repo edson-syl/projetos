@@ -14,11 +14,6 @@ if (file_exists($arquivo)) {
     $chamados = json_decode($json, true) ?: [];
 }
 
-// Opcional: mostrar só chamados do usuário logado:
-// $usuario_atual = $_SESSION["usuario"];
-// $chamados = array_filter($chamados, fn($c) => $c["usuario"] === $usuario_atual);
-?>
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
