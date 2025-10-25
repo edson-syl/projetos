@@ -7,9 +7,9 @@ Aqui estão organizadas as pastas dos meus projetos **Front-End**, **Back-End** 
 
 ## 🧩 Estrutura do Repositório
 
-📁 [**/frontend**](./frontend) → Interfaces e experiências de usuário (HTML, CSS, JS, Bootstrap, jQuery, etc.)  
-📁 [**/backend**](./backend) → Servidores, APIs, banco de dados e regras de negócio (Node.js, PHP, Python, etc.)  
-📁 [**/fullstack**](./fullstack) → Aplicações completas integrando front e back
+📁 [**frontend**](./frontend) → Interfaces e experiências de usuário (HTML, CSS, JS, Bootstrap, jQuery, etc.)  
+📁 [**backend**](./backend) → Servidores, APIs, banco de dados e regras de negócio (Node.js, PHP, Python, etc.)  
+📁 [**fullstack**](./fullstack) → Aplicações completas integrando front e back
 
 ---
 
