@@ -1,0 +1,86 @@
+.produtos {
+  padding: 100px 20px 50px;
+  text-align: center;
+}
+
+.produtos h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.lista-produtos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row !important;
+  justify-content: center;
+  gap: 30px;
+}
+
+.produto {
+  position: relative;
+  width: 250px;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.produto:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.produto h2 {
+  margin: 15px 0 10px;
+}
+
+.produto p {
+  color: #4c8bf5;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.produto button {
+  padding: 10px 20px;
+  border: none;
+  background: #4c8bf5;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.produto button:hover {
+  background: #3f75d4;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(45deg, #ff7f50, #ff6347);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 12px;
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0);}
+  100% { transform: translateY(-5px);}
+}
+
+@media (max-width: 768px) {
+  .lista-produtos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
