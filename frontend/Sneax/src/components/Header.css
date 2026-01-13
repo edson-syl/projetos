@@ -1,0 +1,133 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 40px;
+
+  backdrop-filter: blur(10px);
+  background: rgba(20, 20, 20, 0.55);
+
+  z-index: 1000;
+  transition: background .3s ease, padding .3s ease, box-shadow .3s ease;
+}
+
+.header.scrolled {
+  background: rgba(15, 15, 15, 0.92);
+  box-shadow: 0 4px 25px rgba(0,0,0,0.35);
+  padding: 14px 40px;
+}
+
+.logo a {
+  color: white;
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+
+.logo a:hover {
+  opacity: 0.8;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  transition: opacity .3s;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #ff7f50;
+  transition: width .3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.carrinho {
+  position: relative;
+}
+
+.carrinho-icon {
+  position: relative;
+  color: white;
+  transition: transform .3s, color .3s;
+}
+
+.carrinho-icon:hover {
+  transform: scale(1.15);
+  color: #ff7f50;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+
+  background: #ff4f2c;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+
+  width: 18px;
+  height: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  animation: popIn .4s ease;
+}
+
+@keyframes popIn {
+  0% { transform: scale(0); }
+  60% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 14px 25px;
+    gap: 12px;
+  }
+
+  .header.scrolled {
+    padding: 10px 25px;
+  }
+
+  .nav-links {
+    gap: 18px;
+  }
+
+  .carrinho {
+    display: none;
+  }
+
+  .cart-badge {
+    right: -8px;
+  }
+}
