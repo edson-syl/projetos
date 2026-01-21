@@ -38,5 +38,3 @@
 - Deletar e editar qualquer produto
 - Importar produtos via CSV
 - Visualizar histórico de vendas
-
->>>>>>> f6147817db8da2f863618685ca5959e99c21c5c8
