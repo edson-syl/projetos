@@ -1,5 +1,7 @@
 # 📘 Caderno Temático — NotebookLM  
 ### Projeto de Engenharia de Prompt
+[NotebookLM - financial study](https://notebooklm.google.com/notebook/17cc1bc1-6e9f-4969-8def-3ca9370e6f2c) Clique para acessar!
+
 
 Este caderno foi criado como um **projeto de engenharia de prompt**, com o objetivo de transformar a IA em uma **parceira ativa de estudo**, e não apenas uma ferramenta que responde perguntas soltas.
 
