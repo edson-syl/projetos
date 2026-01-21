@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # SmartMart - Protótipo Fullstack
 
 ## Instalação Back-end
