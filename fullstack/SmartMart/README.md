@@ -18,7 +18,6 @@
 - Importar produtos via CSV
 - Visualizar histórico de vendas
 
-=======
 # SmartMart - Protótipo Fullstack
 
 ## Instalação Back-end
