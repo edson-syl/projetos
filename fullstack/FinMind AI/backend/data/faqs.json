@@ -1,0 +1,23 @@
+{
+  "investimento": {
+    "conceito": "Aplicação de dinheiro com o objetivo de obter rendimento ou crescimento ao longo do tempo."
+  },
+  "juros": {
+    "conceito": "Valor pago ou recebido pelo uso do dinheiro durante determinado período."
+  },
+  "emprestimo": {
+    "conceito": "Dinheiro obtido de uma instituição ou pessoa com a obrigação de devolução futura, geralmente com juros."
+  },
+  "cartao": {
+    "conceito": "Meio de pagamento que permite comprar agora e pagar depois, podendo gerar juros caso a fatura não seja quitada integralmente."
+  },
+  "renda": {
+    "conceito": "Valor recebido regularmente, como salário, lucros, aluguéis ou rendimentos de investimentos."
+  },
+  "financiamento": {
+    "conceito": "Tipo de empréstimo destinado à aquisição de bens de maior valor, pago em parcelas com juros."
+  },
+  "cdb": {
+    "conceito": "Investimento de renda fixa em que o investidor empresta dinheiro ao banco e recebe juros como retorno."
+  }
+}
