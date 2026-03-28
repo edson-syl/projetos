@@ -1,0 +1,73 @@
+:root {
+  color: white;
+}
+
+#testimonials {
+  scroll-margin-top: 160px;
+  
+}
+
+.testimonial img { 
+  width: 50px;
+  height: 50px;
+  min-width: 50px;  
+  min-height: 50px;
+
+  border-radius: 50%;
+  object-fit: cover;
+
+  display: block;    
+}
+
+#testimonials .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* Swiper */
+#testimonials .swiper {
+  width: 100%;
+  padding: 20px 10px;
+}
+
+#testimonials .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+/* Card base */
+.testimonial {
+  display: flex;           
+  align-items: center;      
+  gap: 15px;  
+  background-color: #181818;
+  padding: 20px;
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 280px;
+  border-radius: 10px;
+  border: 1px solid #2a2a2a;
+
+  transition: 0.3s ease;
+}
+
+.testimonial:hover {
+  box-shadow: 0 8px 18px rgba(0,0,0,0.5);
+}
+
+/* Destaque*/
+.swiper-slide-active .testimonial {
+  transform: scale(1.05);
+  border: 1px solid #f1c40f;
+  background-color: #1f1f1f;
+}
+
+
+@media (max-width: 768px) {
+  #testimonials {
+    margin-top: 20%;
+  }
+}
+ 

@@ -1,0 +1,16 @@
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 15px 20px;
+  transition: transform 0.2s ease;
+  z-index: 1000;
+}
+
+.whatsapp-button:hover {
+  transform: translateY(-3px);
+}
+
+.whatsapp-button img {
+  width: clamp(60px, 5vw, 80px)
+}

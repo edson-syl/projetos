@@ -1,0 +1,72 @@
+#footer {
+  background-color: #121212;
+  color: #e5e5e5;
+  padding: 50px 0 25px;
+  margin-top: 20%;
+  border-top: 1px solid #1f1f1f;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-content div {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Marca */
+.footer-brand h2 {
+  color: #d4af37;
+  margin-bottom: 10px;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  color: #bfbfbf;
+  line-height: 1.6;
+}
+
+/* Links */
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #e5e5e5;
+  font-size: 14px;
+
+  transition: all 0.25s ease;
+}
+
+.footer-links a:hover {
+  color: #f1c40f;
+  padding-left: 4px; /* micro movimento */
+}
+
+/* Contato */
+.footer-contact p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #bfbfbf;
+}
+
+/* Linha de baixo */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 13px;
+  color: #888;
+
+  border-top: 1px solid #2a2a2a;
+  padding-top: 20px;
+}
