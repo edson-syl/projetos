@@ -28,3 +28,10 @@ O site foi desenvolvido para funcionar bem em:
 - 📱 Dispositivos móveis  
 - 💻 Tablets  
 - 🖥️ Desktop  
+
+--- 
+
+## 🌐 Acesso ao site
+
+Confira o site da barbearia em:
+https://barbearia-portfolio.netlify.app/
